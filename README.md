@@ -1,45 +1,29 @@
-# Proyecto: Flight reservation system
-Daniel Contreras Chávez A01710608
+# Project: Flight reservation system
+Daniel Contreras Chavez
 
-El proyecto va a consistir de un sistema de reservación de vuelos, los cuales van a estar almacenados y listados en un archivo csv, el usuario podrá ingresar su destino y además filtrar dichos vuelos por precio, hora de salida, o duración del vuelo y organizarlos manera descendente o ascendente.
-Para lograr esto se utilizarán:
-- listas anidadas
-- Algoritmos de ordenamiento: Se usará un shell sort
-- Algoritmos de búsqueda
+The project will consist of a flight reservation system, which will be stored and listed in a csv file, the user can enter their destination and also filter these flights by price, departure time, or flight duration and organize them in descending or ascending order.
+To achieve this we will use:
+- Linked lists
+- Sorting algorithms: A shell sort will be used.
+- Search algorithms
 
-## Descripción del avance 1
-En este avance se definirán las bases para plantear el proyecto y los algoritmos que serán usados mediante la escritura de este archivo Readme.md y se empezará a crear una base de datos con vuelos.
+## Description of step 1
+In this preview we will define the basis for the project and the algorithms that will be used by writing this Readme.md file and we will start creating a database with flights.
 
-## Instrucciones para compilar el avance de proyecto
-Ejecuta el siguiente comando en la terminal:
+## Instructions to compile the project preview
+Run the following command in the terminal:
 
-`g++ main.cpp -o primer_avance` 
+`g++ main.cpp -o flights`. 
 
-## Instrucciones para ejecutar el avance de proyecto
-Ejecuta el siguiente comando en la terminal:
+## Instructions to run the project preview
+Run the following command in the terminal:
 
-`./primer_avance` 
+`./flights` 
 
-## Descripción de las entradas del avance de proyecto
-*Escribe aquí la descripción de las entradas del proyecto, por ejemplo, si de entrada se requieren varios archivos, hay que indicar el formato de cada uno de ellos, y proporcionar un ejemplo de los datos de cada archivo.*
+## Description of the project preview entries
 
-El proyecto requiere una entrada de archivoo de tipo csv, donde estarán guardados los vuelos, y sus características (nombre, duración, precio, hora de llegada/salida), cada una de estas estará separada por comas. Los datos serán strings, enteros (para la duración), y floats (para el precio y la hora de llegada/salida).
+The project requires a csv file entry, where the flights will be stored, and their characteristics (name, duration, price, arrival/departure time), each of these will be separated by commas. The data will be strings, integers (for duration), and floats (for price and arrival/departure time).
 
-## Descripción de las salidas del avance de proyecto
-*Escribe aquí la descripción de los resultados de la ejecución de tu programa.*
+## Description of the outputs of the project preview
 
-Las salidas dependerán de lo que quiera hacer el usuario, una vez elegida la destinación, se mostrarán los vuelos que tengan esa destinación, y ya dependiendo de si el usuario quiere filtrar los vuelos por precio, duración, u hora, obtendrá una lista con los vuelos ordenados de esa manera. Una vez seleccionado el vuelo, se generará un archivo de texto (ticket) donde saldrán los detalles del vuelo seleccionado por el usuario.
-
-## Desarrollo de competencias
-
-### SICT0301: Evalúa los componentes
-#### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
-Escribe aquí tus argumentos sobre por qué consideras que has desarrrollado esta competencia y dónde se puede observar el desarrollo que mencionas.
-
-Ya que se usará el shell sort que en el mejor de los casos tiene una complejidad de O(nlog (n)) y en el peor de los casos O(nlog(n)^2)
-
-### SICT0302: Toma decisiones
-#### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
-Escribe aquí tus argumentos sobre por qué consideras que has desarrrollado esta competencia y dónde se puede observar el desarrollo que mencionas.
-
-Para este proyecto se usará el shell sort ya que es un algoritmo con una eficiencia bastante buena, y ya que se trabajará con bases de datos bastante grandes, no será tan difícil implementarlo, además, en el peor de los casos (O(nlog(n)^2)), se comporta mejor que otros ordenamientos como el bubble o el insertion sort, que en el peor de los casos son O(n^2).
+The outputs will depend on what the user wants to do, once the destination is chosen, the flights that have that destination will be shown, and depending on if the user wants to filter the flights by price, duration, or time, he will get a list with the flights sorted in that way. Once the flight is selected, a text file (ticket) will be generated with the details of the flight selected by the user.
