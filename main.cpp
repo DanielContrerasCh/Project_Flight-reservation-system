@@ -1,18 +1,21 @@
+// Creado por Daniel Contreras Chávez A01710608
+// el 21 de agosto del 2023
+
 #include <iostream>
 #include <fstream>
 #include "flights.h"
 #include "sorts.h"
+#include "menu.h"
 #include <vector>
 
 using namespace std;
 
 int main() {
-  Sorts sorted;
+  Sorts data;
   vector<Flights> flights;
-  flights = sorted.loadFile("dataset.csv");
-  sorted.sort(flights);
   
-  for(int i = 0; i < flights.size(); i++){
-    cout<< i + 1 <<")"; flights[i].showInfo(); cout<<endl;
-  }
+
+
+  menu(flights, data);
+  return 0;
 }
